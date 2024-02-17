@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;  
+}
+
+
+.main-cont{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    height: 65.69px;
+    width: 131.39px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.signup-cont{
+    height: 100%;
+    min-height: 50vh;
+    width: 42vh;
+    padding: 16.424px 32.848px;
+    margin: 8.212px 8.212px;
+    background-color: #fff;
+    text-align: start;
+    border: 1px solid gray;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signup-cont h2{
+    font-weight: 300;
+    font-size: 27.92px;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+}
+
+.signup-cont p{
+    font-size: 13px;
+    font-weight: 550;
+    padding-bottom: 2px;
+}
+
+.yourname input{
+    height: 32.84px;
+    width: 100%;
+    border: 0.1px solid gray;
+    border-radius: 2px;
+    outline: none;
+    padding: 1.6px 8.2px;
+    margin-bottom: 16.424px;
+}
+
+
+.email input{
+    height: 32.84px;
+    width: 100%;
+    border: 0.1px solid gray;
+    border-radius: 2px;
+    outline: none;
+    padding: 1.6px 8.2px;
+    margin-bottom: 16.424px;
+}
+
+
+.pass input{
+    height: 32.84px;
+    width: 100%;
+    border: 0.1px solid gray;
+    border-radius: 2px;
+    outline: none;
+    padding: 1.6px 8.2px;
+    margin-bottom: 16.424px;
+}
+
+.repass input{
+    height: 32.84px;
+    width: 100%;
+    border: 0.1px solid gray;
+    border-radius: 2px;
+    outline: none;
+    padding: 1.6px 8.2px;
+    margin-bottom: 16.424px;
+}
+
+
+#signup-btn{
+    height: 32.84px;
+    width: 100%;
+    font-size: 16px;
+    background-color: rgb(241, 176, 53);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 16.424px;
+    cursor: pointer;
+}
+
+
+.cond-privacy{
+    margin-bottom: 16.424px;
+}
+
+#cou-para a,
+#pn-para a{
+    text-decoration: none;
+    color: #007185;
+}
+
+#cou-para a:hover,
+#pn-para a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+
+
+.already-para{
+    padding-top: 10px;
+    border-top: 1px solid #f3f3f3;
+}
+#signin a{
+    text-decoration: none;
+    color: #007185;
+}
+#signin a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+
+
+/* footer */
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    border: 0.01px solid gainsboro;
+    padding: 30px;
+    background-color: #f3f3f3;
+}
+
+.three-para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+
+.three-para p a{
+    text-decoration: none;
+    color: #007185;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+.three-para p a:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+#acioia-para{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:1000px) {
+    body{
+        width: 100%;
+    }
+
+.logo img{
+    width: 12vw;
+    height: 6vw;
+    background-color: white;
+    margin: 1.8vw 0;
+}
+
+.signup-cont{
+    height: 100%;
+    min-height: 43vw;
+    width: 36vw;
+    background-color: #fff;
+    padding: 1.5vw 3vw;
+    text-align: start;
+    margin: 0.5vw 0.5vw;
+    border: 0.01vw solid gray;
+    border-radius: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signup-cont h2{
+    font-weight: 300;
+    font-size: 2.6vw;
+    padding-bottom: 0.2vw;
+    margin-bottom: 0.6vw;
+}
+
+.signup-cont p{
+    font-size: 1.4vw;
+    font-weight: 400;
+    padding-bottom: 0.2vw;
+}
+
+.yourname input{
+    height: 3.5vw;
+    width: 100%;
+    border: 0.01vw solid gray;
+    border-radius: 0.2vw;
+    outline: none;
+    padding: 0.2vw 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.3vw;
+}
+
+.email input{
+    height: 3.5vw;
+    width: 100%;
+    border: 0.01vw solid gray;
+    border-radius: 0.2vw;
+    outline: none;
+    padding: 0.2vw 1vw;
+    margin-bottom: 1vw;
+}
+
+.pass input{
+    height: 3.5vw;
+    width: 100%;
+    border: 0.01vw solid gray;
+    border-radius: 0.2vw;
+    outline: none;
+    padding: 0.2vw 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.3vw;
+}
+
+.repass input{
+    height: 3.5vw;
+    width: 100%;
+    border: 0.01vw solid gray;
+    border-radius: 0.2vw;
+    outline: none;
+    padding: 0.2vw 1vw;
+    margin-bottom: 1vw;
+}
+
+
+#signup-btn{
+    height: 3.8vw;
+    width: 100%;
+    font-size: 1.6vw;
+    background-color: rgb(241, 176, 53);
+    border: none;
+    border-radius: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+.cond-privacy{
+    margin-bottom: 1vw;
+}
+
+#cou-para a,
+#pn-para a{
+    text-decoration: none;
+}
+
+
+
+.already-para{
+    padding-top: 0.5vw;
+    border-top: 0.1vw solid #f3f3f3;
+    font-size: 1vw;
+}
+
+
+
+
+
+
+
+.footer{
+    height: 100vh;
+    width: 100%;
+}
+
+.three-para{
+    gap: 4vw;
+}
+
+.three-para p a{
+    font-size: 1.4vw;
+    display: block;
+}
+#acioia-para{
+    font-size: 1.4vw;
+    display: block;
+}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,3366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo border">
+          <img src="images/amazon_logo.png" alt="" />
+        </div>
+
+        <div class="nav-address border">
+          <div class="location">
+            <p class="add-first-para">Deliver to</p>
+            <div class="location-icon">
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="add-sec-para">India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-searchbar">
+          <div class="select">
+            <div class="options">
+              <span>All</span>
+            </div>
+            <div class="drop-down-icon">
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="dropdown">
+              <ul class="menu-list">
+                <li id="list-name">All Departments</li>
+                <li id="list-name">Arts & Craft</li>
+                <li id="list-name">Automotive</li>
+                <li id="list-name">Baby</li>
+                <li id="list-name">Beauty & Personal Care</li>
+                <li id="list-name">Boos</li>
+                <li id="list-name">Boy's Fashion</li>
+                <li id="list-name">Computers</li>
+                <li id="list-name">Deals</li>
+                <li id="list-name">Digital Music</li>
+                <li id="list-name">Electronics</li>
+                <li id="list-name">Girl's Fashion</li>
+                <li id="list-name">Health & Household</li>
+                <li id="list-name">Home & Kitchen</li>
+                <li id="list-name">Industrial & Scientific</li>
+                <li id="list-name">Kindle Store</li>
+                <li id="list-name">Luggage</li>
+                <li id="list-name">Men's Fashion</li>
+                <li id="list-name">Movies & TV</li>
+                <li id="list-name">Music, CDs &vinyl</li>
+                <li id="list-name">Pet Supplies</li>
+                <li id="list-name">Prime Video</li>
+                <li id="list-name">Software</li>
+                <li id="list-name">Sports & Outdoors</li>
+                <li id="list-name">Tools & Home</li>
+                <li id="list-name">Toy's & Game</li>
+                <li id="list-name">Video Games</li>
+                <li id="list-name">Women's Fashion</li>
+              </ul>
+            </div>
+          </div>
+          <input type="text" placeholder="Search Amazon" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="nav-languages border">
+          <div class="language-select">
+            <span>EN</span>
+          </div>
+          <div class="lang-drop-down-icon">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+
+          <div class="languages-labels">
+            <div class="english-cont">
+              <p>Change languages <a href="">Learn more</a></p>
+              <input type="radio" name="lang" id="english" />
+              <label for="english">English-EN</label>
+            </div>
+            <hr />
+
+            <div class="unselected-cont">
+              <div class="espanol-cont">
+                <input type="radio" name="lang" id="espanol" />
+                <label for="espanol">Espanol-ES</label>
+              </div>
+
+              <div class="deutsch-cont">
+                <input type="radio" name="lang" id="deutsch" />
+                <label for="deutsch">Deutsch-DE</label>
+              </div>
+              <div class="portegues">
+                <input type="radio" name="lang" id="portegues" />
+                <label for="portegues">Portegues-PT</label>
+              </div>
+            </div>
+            <hr />
+
+            <div class="change-currency">
+              <p>Change currency <a href="">Learn more</a></p>
+              <p>$ - USD - US Dollar <a href="" id="change-para">Change</a></p>
+            </div>
+            <hr />
+
+            <div class="yaslast-para">
+              <p>You are shopping on Amazon.com</p>
+              <p id="ccr-para"><a href="">Change country/region.</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-signin border">
+          <div class="signin-para">
+            <p class="hsipara">Hello, sign in</p>
+            <p class="alpara">Account & Lists</p>
+          </div>
+          <div class="signin-drop-down-icon">
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+
+          <div class="signin-list">
+            <div class="signin-cont">
+              <div class="si-btn">
+                <button id="signin-btn">Sign in</button>
+              </div>
+              <div class="sidown-para">
+                <span id="ncpara"
+                  ><p>New customer?<a href="">Start here.</a></p></span
+                >
+              </div>
+            </div>
+            <hr />
+            <div class="signin-lrcol">
+              <div class="left-col">
+                <h3>Your List</h3>
+                <div class="signinleft-para">
+                  <p><a href="">Create a List</a></p>
+                  <p><a href="">Find a List or Registry</a></p>
+                </div>
+              </div>
+              <div class="right-col">
+                <h3>Your Account</h3>
+                <div class="signinright-para">
+                  <p><a href="">Account</a></p>
+                  <p><a href="">Orders</a></p>
+                  <p><a href="">Recommendations</a></p>
+                  <p><a href="">Browsing History</a></p>
+                  <p><a href="">Watchlist</a></p>
+                  <p><a href="">Video Purchases & Rentals</a></p>
+                  <p><a href="">Kindle Unlimited</a></p>
+                  <p><a href="">Content & Devices</a></p>
+                  <p><a href="">Subscribe & Save Items</a></p>
+                  <p><a href="">Memberships & Subscriptions</a></p>
+                  <p><a href="">Music Library</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-return-order border">
+          <p class="retpara">Returns</p>
+          <p class="orpara">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </div>
+      </div>
+
+      <!-- second navbar -->
+
+      <div class="second-navbar">
+        <div class="bar-icon border">
+          <i class="fa-solid fa-bars"></i>
+          All
+        </div>
+
+        <div class="todays-deal border">
+          <p class="snpara">Today's Deals</p>
+        </div>
+
+        <div class="customer-service border">
+          <p class="snpara">Customer Service</p>
+        </div>
+
+        <div class="registry border">
+          <p class="snpara">Registry</p>
+        </div>
+
+        <div class="gift-cards border">
+          <p class="snpara">Gift Cards</p>
+        </div>
+
+        <div class="sell border">
+          <p class="snpara">Sell</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- first navbar location list first box-->
+
+    <div class="location-list">
+      <div class="heading">
+        <h2 id="cylhead">Choose your location</h2>
+      </div>
+      <div class="inner-para-cont">
+        <span id="doadspara"
+          ><p>
+            Delivery options and delivery speeds may vary for different
+            locations
+          </p></span
+        >
+        <button id="sitsya-btn">sign in to see your address</button>
+        <span id="oeauzc-para"><p>or enter a US zip code</p></span>
+        <div class="zip-code-input">
+          <input type="text" id="zip-input" />
+          <button id="apply-btn">Apply</button>
+        </div>
+        <span id="orpara"><p>or</p></span>
+        <select name="" id="city">
+          <option value="India">India</option>
+        </select>
+      </div>
+
+      <div class="done-btn">
+        <button id="done-btn">Done</button>
+      </div>
+    </div>
+
+
+
+    
+
+    <main>
+      <!-- first slider images-->
+
+      <div class="slider">
+        <div class="list">
+          <div class="img-item">
+            <img src="slider-images/amzn-img.jpg" alt="" />
+          </div>
+          <div class="img-item">
+            <img src="slider-images/amzn-img2.jpg" alt="" />
+          </div>
+          <div class="img-item">
+            <img src="slider-images/amazn-img3.jpg" alt="" />
+          </div>
+          <div class="img-item">
+            <img src="slider-images/amazn-img4.jpg" alt="" />
+          </div>
+          <div class="img-item">
+            <img src="slider-images/amazn-img5.jpg" alt="" />
+          </div>
+          <div class="img-item">
+            <img src="slider-images/amazn-img6.jpg" alt="" />
+          </div>
+          <div class="img-item">
+            <img src="slider-images/amazn-img7.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="prev-next-btn">
+          <div class="left-chevron">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="right-chevron">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- boxes below slider images -->
+
+      <div class="boxes-below-sliderimage">
+
+        <!-- first boxes container -->
+
+        <div class="first-boxes-container">
+          <div class="boxes">
+            <h3 id="titleofitems">Gaming accessories</h3>
+            <div class="inner-boxes">
+              <div class="four-small-boxes">
+                <img src="images/headset.jpg" alt="" />
+                <h5>Headset</h5>
+              </div>
+              <div class="four-small-boxes">
+                <img src="images/keyboard.jpg" alt="" />
+                <h5>Keyboard</h5>
+              </div>
+              <div class="four-small-boxes">
+                <img src="images/mouse.jpg" alt="" />
+                <h5>Computer mice</h5>
+              </div>
+              <div class="four-small-boxes">
+                <img src="images/chairs.jpg" alt="" />
+                <h5>Chairs</h5>
+              </div>
+            </div>
+            <p id="seemore-para"><a href="">see more</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">New year, new supplies</h2>
+            <div class="inner-boxes1">
+              <img src="images/notebook.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">see more</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Deals in PCs</h2>
+            <div class="inner-boxes1">
+              <img src="images/speaker.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">Shop now</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Refresh your space</h2>
+            <div class="inner-boxes">
+              <div class="four-small-boxes">
+                <img src="images/dining.jpg" alt="" />
+                <h5>Dining</h5>
+              </div>
+              <div class="four-small-boxes">
+                <img src="images/home.jpg" alt="" />
+                <h5>Home</h5>
+              </div>
+              <div class="four-small-boxes">
+                <img src="images/kitchen.jpg" alt="" />
+                <h5>Kitchen</h5>
+              </div>
+              <div class="four-small-boxes">
+                <img src="images/health and beauty.jpg" alt="" />
+                <h5>Health and Beauty</h5>
+              </div>
+            </div>
+            <p id="seemore-para"><a href="">see more</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Toys under $25</h2>
+            <div class="inner-boxes1">
+              <img src="images/toys.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">Shop now</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Shop School Supplies</h2>
+            <div class="inner-boxes1">
+              <img src="images/bag.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">Shop now</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Lunar New Year</h2>
+            <div class="inner-boxes1">
+              <img src="images/gift.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">Shop now</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Top Deal</h2>
+            <div class="inner-boxes1">
+              <img src="images/laptop.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">See all deals</a></p>
+          </div>
+        </div>
+
+
+
+        <!-- second slider image conatiner  -->
+
+        <div class="second-sliderimg-cont">
+          <div class="second-boxes-container">
+            <div class="scnd-box-main-heading">
+              <h2>Exciting deals</h2>
+              <p id="sbmhsal-para"><a href="">See all deals</a></p>
+            </div>
+
+            <div class="second-all-boxes-container">
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img1.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img2.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img3.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img4.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img5.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img6.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img7.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img8.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img9.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img10.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img11.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img12.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img13.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img14.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img15.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img16.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img17.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img18.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img19.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="second-box">
+                <div class="scnd-inner-boxes">
+                  <img src="second-slider-img/img20.jpg" alt="" />
+                </div>
+                <div class="scnd-box-para-cont">
+                  <div class="scnd-box-btn">
+                    <p id="scnd-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="scnd-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+              <div class="scrollbar-thumb"></div>
+            </div>
+          </div>
+
+          <div class="prevnext-btn">
+            <div class="left-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="right-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- third slider image container -->
+
+        <div class="third-sliderimg-cont">
+        <div class="third-boxes-container">
+            <div class="third-box-main-heading">
+              <h2>Exciting deals</h2>
+              <p id="sbmhsal-para"><a href="">See all deals</a></p>
+            </div>
+
+            <div class="third-all-boxes-container">
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img1.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img2.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img3.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img4.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img5.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img6.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img7.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img8.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img9.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img10.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img11.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img12.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img13.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img14.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img15.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img16.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img17.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img18.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img19.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="third-box">
+                <div class="third-inner-boxes">
+                  <img src="second-slider-img/img20.jpg" alt="" />
+                </div>
+                <div class="third-box-para-cont">
+                  <div class="third-box-btn">
+                    <p id="third-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="third-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="third-slider-scrollbar">
+            <div class="third-scrollbar-track">
+              <div class="third-scrollbar-thumb"></div>
+            </div>
+          </div>
+
+          <div class="third-prevnext-btn">
+            <div class="third-left-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="third-right-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- fourth boxes conatiner -->
+
+        <div class="first-boxes-container">
+            
+            <div class="boxes">
+              <h2 id="titleofitems">Smartwatches</h2>
+              <div class="inner-boxes1">
+                <img src="images/smrtwtch.jpg" alt="" />
+              </div>
+              <p id="seemore-para"><a href="">see more</a></p>
+            </div>
+
+            <div class="boxes">
+                <h3 id="titleofitems">Gaming merchandise</h3>
+                <div class="inner-boxes">
+                  <div class="four-small-boxes">
+                    <img src="images/tshirt.jpg" alt="" />
+                    <h5>Apparel</h5>
+                  </div>
+                  <div class="four-small-boxes">
+                    <img src="images/hat.jpg" alt="" />
+                    <h5>Hats</h5>
+                  </div>
+                  <div class="four-small-boxes">
+                    <img src="images/spider.jpg" alt="" />
+                    <h5>Action figures</h5>
+                  </div>
+                  <div class="four-small-boxes">
+                    <img src="images/mug.jpg" alt="" />
+                    <h5>Mugs</h5>
+                  </div>
+                </div>
+                <p id="seemore-para"><a href="">see more</a></p>
+              </div>
+  
+            <div class="boxes">
+              <h2 id="titleofitems">Shop School Supplies</h2>
+              <div class="inner-boxes1">
+                <img src="images/sclbag.jpg" alt="" />
+              </div>
+              <p id="seemore-para"><a href="">Shop now</a></p>
+            </div>
+  
+            <div class="boxes">
+              <h2 id="titleofitems">A whole new way to work</h2>
+              <div class="inner-boxes1">
+                <img src="images/womlap.jpg" alt="" />
+              </div>
+              <p id="seemore-para"><a href="">Shop now</a></p>
+            </div>
+  
+        </div>
+
+
+
+
+      <!-- fifth slider image container -->
+
+      <div class="fifth-sliderimg-cont">
+        <div class="fifth-boxes-container">
+            <div class="fifth-box-main-heading">
+              <h2>Exciting deals</h2>
+              <p id="sbmhsal-para"><a href="">See all deals</a></p>
+            </div>
+
+            <div class="fifth-all-boxes-container">
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img1.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img2.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img3.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img4.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img5.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img6.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img7.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img8.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img9.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img10.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img11.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img12.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img13.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img14.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img15.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img16.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img17.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img18.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img19.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fifth-box">
+                <div class="fifth-inner-boxes">
+                  <img src="second-slider-img/img20.jpg" alt="" />
+                </div>
+                <div class="fifth-box-para-cont">
+                  <div class="fifth-box-btn">
+                    <p id="fifth-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="fifth-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="fifth-slider-scrollbar">
+            <div class="fifth-scrollbar-track">
+              <div class="fifth-scrollbar-thumb"></div>
+            </div>
+          </div>
+
+          <div class="fifth-prevnext-btn">
+            <div class="fifth-left-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="fifth-right-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+      </div>
+
+
+         <!-- sixth slider image container -->
+
+         <div class="sixth-sliderimg-cont">
+          <div class="sixth-boxes-container">
+              <div class="sixth-box-main-heading">
+                <h2>Exciting deals</h2>
+                <p id="sbmhsal-para"><a href="">See all deals</a></p>
+              </div>
+  
+              <div class="sixth-all-boxes-container">
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img1.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img2.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img3.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img4.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img5.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img6.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img7.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img8.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img9.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img10.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img11.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img12.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img13.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img14.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img15.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img16.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img17.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img18.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img19.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sixth-box">
+                  <div class="sixth-inner-boxes">
+                    <img src="second-slider-img/img20.jpg" alt="" />
+                  </div>
+                  <div class="sixth-box-para-cont">
+                    <div class="sixth-box-btn">
+                      <p id="sixth-box-btn">27% off</p>
+                      <span id="sbbdeal-para">deal</span>
+                    </div>
+                    <div class="sixth-box-rupees-cont">
+                      <p id="rupees-para">
+                        $485.99
+                        <span id="rpslistprice-para">List Price: $669.00</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+  
+  
+  
+              </div>
+            </div>
+  
+            <div class="sixth-slider-scrollbar">
+              <div class="sixth-scrollbar-track">
+                <div class="sixth-scrollbar-thumb"></div>
+              </div>
+            </div>
+  
+            <div class="sixth-prevnext-btn">
+              <div class="sixth-left-prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="sixth-right-next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- seventh boxes conatiner -->
+
+        <div class="first-boxes-container">
+            
+          <div class="boxes">
+            <h2 id="titleofitems">Creating business solutions</h2>
+            <div class="inner-boxes1">
+              <img src="images/cbslapy.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">see more</a></p>
+          </div>
+
+          <div class="boxes">
+              <h3 id="titleofitems">Warm & welcoming decor</h3>
+              <div class="inner-boxes">
+                <div class="four-small-boxes">
+                  <img src="images/weather.jpg" alt="" />
+                  <h5>Wreaths & garlands </h5>
+                </div>
+                <div class="four-small-boxes">
+                  <img src="images/outdoor.jpg" alt="" />
+                  <h5>Outdoor decor</h5>
+                </div>
+                <div class="four-small-boxes">
+                  <img src="images/pillow.jpg" alt="" />
+                  <h5>Pillows & throws</h5>
+                </div>
+                <div class="four-small-boxes">
+                  <img src="images/wallart.jpg" alt="" />
+                  <h5>Wall art & mirrors</h5>
+                </div>
+              </div>
+              <p id="seemore-para"><a href="">see more</a></p>
+            </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Laptops for every need</h2>
+            <div class="inner-boxes1">
+              <img src="images/enlapy.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">Shop now</a></p>
+          </div>
+
+          <div class="boxes">
+            <h2 id="titleofitems">Personal Care under $25</h2>
+            <div class="inner-boxes1">
+              <img src="images/brush.jpg" alt="" />
+            </div>
+            <p id="seemore-para"><a href="">Shop now</a></p>
+          </div>
+
+      </div>
+
+
+
+
+
+      <!-- eight slider image container -->
+
+      <div class="eight-sliderimg-cont">
+        <div class="eight-boxes-container">
+            <div class="eight-box-main-heading">
+              <h2>Exciting deals</h2>
+              <p id="sbmhsal-para"><a href="">See all deals</a></p>
+            </div>
+
+            <div class="eight-all-boxes-container">
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img1.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img2.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img3.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img4.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img5.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img6.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img7.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img8.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img9.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img10.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img11.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img12.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img13.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img14.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img15.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img16.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img17.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img18.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img19.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="eight-box">
+                <div class="eight-inner-boxes">
+                  <img src="second-slider-img/img20.jpg" alt="" />
+                </div>
+                <div class="eight-box-para-cont">
+                  <div class="eight-box-btn">
+                    <p id="eight-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="eight-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="eight-slider-scrollbar">
+            <div class="eight-scrollbar-track">
+              <div class="eight-scrollbar-thumb"></div>
+            </div>
+          </div>
+
+          <div class="eight-prevnext-btn">
+            <div class="eight-left-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="eight-right-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- nine slider image container -->
+
+      <div class="nine-sliderimg-cont">
+        <div class="nine-boxes-container">
+            <div class="nine-box-main-heading">
+              <h2>Exciting deals</h2>
+              <p id="sbmhsal-para"><a href="">See all deals</a></p>
+            </div>
+
+            <div class="nine-all-boxes-container">
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img1.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img2.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img3.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img4.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img5.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img6.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img7.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img8.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img9.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img10.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img11.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img12.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img13.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img14.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img15.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img16.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img17.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img18.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img19.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nine-box">
+                <div class="nine-inner-boxes">
+                  <img src="second-slider-img/img20.jpg" alt="" />
+                </div>
+                <div class="nine-box-para-cont">
+                  <div class="nine-box-btn">
+                    <p id="nine-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="nine-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="nine-slider-scrollbar">
+            <div class="nine-scrollbar-track">
+              <div class="nine-scrollbar-thumb"></div>
+            </div>
+          </div>
+
+          <div class="nine-prevnext-btn">
+            <div class="nine-left-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="nine-right-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+         <!-- ten slider image container -->
+
+      <div class="ten-sliderimg-cont">
+        <div class="ten-boxes-container">
+            <div class="ten-box-main-heading">
+              <h2>Exciting deals</h2>
+              <p id="sbmhsal-para"><a href="">See all deals</a></p>
+            </div>
+
+            <div class="ten-all-boxes-container">
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img1.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img2.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img3.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img4.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img5.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img6.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img7.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img8.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img9.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img10.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img11.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img12.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img13.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img14.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img15.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img16.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img17.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img18.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img19.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ten-box">
+                <div class="ten-inner-boxes">
+                  <img src="second-slider-img/img20.jpg" alt="" />
+                </div>
+                <div class="ten-box-para-cont">
+                  <div class="ten-box-btn">
+                    <p id="ten-box-btn">27% off</p>
+                    <span id="sbbdeal-para">deal</span>
+                  </div>
+                  <div class="ten-box-rupees-cont">
+                    <p id="rupees-para">
+                      $485.99
+                      <span id="rpslistprice-para">List Price: $669.00</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="ten-slider-scrollbar">
+            <div class="ten-scrollbar-track">
+              <div class="ten-scrollbar-thumb"></div>
+            </div>
+          </div>
+
+          <div class="ten-prevnext-btn">
+            <div class="ten-left-prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="ten-right-next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="small-footer-cont">
+          <div class="small-footer-items">
+            <p id="sprcdn-para">See personalized recommendations</p>
+            <button>Sign in</button>
+            <p id="smllnc-para">New customer? <a href="" id="smllsthere-para">Start here</a></p>
+          </div>
+        </div>
+
+
+        <div class="large-footer-cont">
+          <div class="lf-main-heading">
+            <h4>Back to Top</h4>
+          </div>
+
+          <div class="larger-footer-items">
+
+            <div class="first-col">
+              <h3>Get to Know Us</h3>
+              <p><a href="">Careers</a></p>
+              <p><a href="">Blog</a></p>
+              <p><a href="">About Amazon</a></p>
+              <p><a href="">Investor Relations</a></p>
+              <p><a href="">Amazon Devices</a></p>
+              <p><a href="">Amazon Science</a></p>
+            </div>
+
+            <div class="second-col">
+              <h3>Make Money with Us</h3>
+              <p><a href="">Sell products on Amazon</a></p>
+              <p><a href="">Sell on Amazon Business</a></p>
+              <p><a href="">Sell apps on Amazon</a></p>
+              <p><a href="">Become an Affiliate</a></p>
+              <p><a href="">Advertise Your Products</a></p>
+              <p><a href="">Self-Publish with Us</a></p>
+              <p><a href="">Host an Amazon Hub</a></p>
+              <p><a href="">›See More Make Money with Us</a></p>
+            </div>
+
+            <div class="third-col">
+              <h3>Amazon Payment Products</h3>
+              <p><a href="">Amazon Business Card</a></p>
+              <p><a href="">Shop with Points</a></p>
+              <p><a href="">Reload Your Balance</a></p>
+              <p><a href="">Amazon Currency Converter</a></p>
+            </div>
+
+            <div class="fourth-col">
+              <h3>Let Us Help You</h3>
+              <p><a href="">Amazon and COVID-19</a></p>
+              <p><a href="">Your Account</a></p>
+              <p><a href="">Your Orders</a></p>
+              <p><a href="">Shipping Rates & Policies</a></p>
+              <p><a href="">Returns & Replacements</a></p>
+              <p><a href="">Manage Your Content and Devices</a></p>
+              <p><a href="">Amazon Assistant</a></p>
+              <p><a href="">Help</a></p>
+            </div>
+          </div>
+
+          <div class="last-footer-cont">
+            <div class="lst-foot-logo">
+              <img src="images/amazon_logo.png" alt="">
+            </div>
+
+            <div class="lst-foot-lang">
+              <i class="fa-solid fa-globe"></i>
+              <span>English</span>
+            </div>
+
+            <div class="lst-foot-dollar">
+              <p>$ USD-U.S.Dollar</p>
+            </div>
+
+            <div class="lst-foot-unitstate">
+              <p>United States</p>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+    
+    </div>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
